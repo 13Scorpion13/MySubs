@@ -10,12 +10,13 @@ from sqlalchemy.ext.asyncio import create_async_engine
 load_dotenv()
 
 API_TOKEN = os.getenv('API_TOKEN')
+base_url = os.getenv('base_url')
 boti = Bot(token=API_TOKEN)
 
 
 async def async_main() -> None:
     engine = create_async_engine(
-        "postgresql+asyncpg://postgres:11062002Andrey@postgres:5432/EcoCode", echo=True)
+        base_url, echo=True)
 
     async with engine.begin() as conn:
         table_users = await conn.run_sync(
