@@ -1,0 +1,15 @@
+# Игнорировать файл переменных окружения в корне
+.env
+
+# Игнорировать данные Docker
+.dockerignore
+*.swp
+docker-compose.override.yml
+
+# Игнорировать временные файлы
+*.log
+*.tmp
+
+# Игнорировать данные IDE
+.idea/
+.vscode/

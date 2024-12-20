@@ -1,0 +1,9 @@
+aiogram==3.13.1
+requests
+sqlmodel
+sqlalchemy
+asyncpg
+python-dateutil
+PyMuPDF
+dateparser
+python-dotenv
